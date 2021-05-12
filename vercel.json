@@ -1,0 +1,19 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "presented-by",
+          "value": "dhrv-the-cat"
+        }
+      ]
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "rewrites": [
+    { "source": "/text/", "destination": "/api/text" },
+    { "source": "/json/", "destination": "/api/json" }
+  ]
+}
